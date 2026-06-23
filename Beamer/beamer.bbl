@@ -1,0 +1,189 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{Albarelli}{article}{}
+      \name{author}{2}{}{%
+        {{hash=63e1d848eeb7d57e12f168babd42c4db}{%
+           family={Albarelli},
+           familyi={A\bibinitperiod},
+           given={Francesco},
+           giveni={F\bibinitperiod}}}%
+        {{hash=2fe1574f5b1248522d44924664f5f6ef}{%
+           family={Genoni},
+           familyi={G\bibinitperiod},
+           given={Marco\bibnamedelima G.},
+           giveni={M\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier BV}%
+      }
+      \strng{namehash}{da2c70b39f28166423e4b0e2a916551b}
+      \strng{fullhash}{da2c70b39f28166423e4b0e2a916551b}
+      \strng{bibnamehash}{da2c70b39f28166423e4b0e2a916551b}
+      \strng{authorbibnamehash}{da2c70b39f28166423e4b0e2a916551b}
+      \strng{authornamehash}{da2c70b39f28166423e4b0e2a916551b}
+      \strng{authorfullhash}{da2c70b39f28166423e4b0e2a916551b}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0375-9601}
+      \field{journaltitle}{Physics Letters A}
+      \field{month}{1}
+      \field{title}{A pedagogical introduction to continuously monitored quantum systems and measurement-based feedback}
+      \field{volume}{494}
+      \field{year}{2024}
+      \field{pages}{129260}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.physleta.2023.129260
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1016/j.physleta.2023.129260
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1016/j.physleta.2023.129260
+      \endverb
+    \endentry
+    \entry{WM}{book}{}
+      \name{author}{2}{}{%
+        {{hash=d7fa9c56b64ff01adb56e14f56d12acc}{%
+           family={Wiseman},
+           familyi={W\bibinitperiod},
+           given={Howard\bibnamedelima M},
+           giveni={H\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=b4118e58557e2103034c7d84dadd0c73}{%
+           family={Milburn},
+           familyi={M\bibinitperiod},
+           given={Gerard\bibnamedelima J},
+           giveni={G\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{location}{1}{%
+        {Cambridge, England}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{4bafae639084d9be7a08b1aa96a20a2e}
+      \strng{fullhash}{4bafae639084d9be7a08b1aa96a20a2e}
+      \strng{bibnamehash}{4bafae639084d9be7a08b1aa96a20a2e}
+      \strng{authorbibnamehash}{4bafae639084d9be7a08b1aa96a20a2e}
+      \strng{authornamehash}{4bafae639084d9be7a08b1aa96a20a2e}
+      \strng{authorfullhash}{4bafae639084d9be7a08b1aa96a20a2e}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{11}
+      \field{title}{Quantum Measurement and Control}
+      \field{year}{2009}
+    \endentry
+    \entry{GardinerCollett}{article}{}
+      \name{author}{2}{}{%
+        {{hash=75c694bd409e025e7e08c106891ff87c}{%
+           family={Gardiner},
+           familyi={G\bibinitperiod},
+           given={C.\bibnamedelimi W.},
+           giveni={C\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=90fc8354daf72e09f6eb0daea315f0f3}{%
+           family={Collett},
+           familyi={C\bibinitperiod},
+           given={M.\bibnamedelimi J.},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Physical Society}%
+      }
+      \strng{namehash}{b4ae8a90d59cde0073f8b603aa67e6d9}
+      \strng{fullhash}{b4ae8a90d59cde0073f8b603aa67e6d9}
+      \strng{bibnamehash}{b4ae8a90d59cde0073f8b603aa67e6d9}
+      \strng{authorbibnamehash}{b4ae8a90d59cde0073f8b603aa67e6d9}
+      \strng{authornamehash}{b4ae8a90d59cde0073f8b603aa67e6d9}
+      \strng{authorfullhash}{b4ae8a90d59cde0073f8b603aa67e6d9}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issue}{6}
+      \field{journaltitle}{Phys. Rev. A}
+      \field{month}{6}
+      \field{title}{Input and output in damped quantum systems: Quantum stochastic differential equations and the master equation}
+      \field{volume}{31}
+      \field{year}{1985}
+      \field{pages}{3761\bibrangedash 3774}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1103/PhysRevA.31.3761
+      \endverb
+      \verb{urlraw}
+      \verb https://link.aps.org/doi/10.1103/PhysRevA.31.3761
+      \endverb
+      \verb{url}
+      \verb https://link.aps.org/doi/10.1103/PhysRevA.31.3761
+      \endverb
+    \endentry
+    \entry{Breuer}{book}{}
+      \name{author}{2}{}{%
+        {{hash=44be9d24e3ede84bee3691a7a300e5db}{%
+           family={Breuer},
+           familyi={B\bibinitperiod},
+           given={Heinz-Peter},
+           giveni={H\bibinithyphendelim P\bibinitperiod}}}%
+        {{hash=4b215190f542b12fd214896e21eff64b}{%
+           family={Petruccione},
+           familyi={P\bibinitperiod},
+           given={Francesco},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University PressOxford}%
+      }
+      \strng{namehash}{fc984943b8bdb1c48eb687b8f74fd49b}
+      \strng{fullhash}{fc984943b8bdb1c48eb687b8f74fd49b}
+      \strng{bibnamehash}{fc984943b8bdb1c48eb687b8f74fd49b}
+      \strng{authorbibnamehash}{fc984943b8bdb1c48eb687b8f74fd49b}
+      \strng{authornamehash}{fc984943b8bdb1c48eb687b8f74fd49b}
+      \strng{authorfullhash}{fc984943b8bdb1c48eb687b8f74fd49b}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9780191706349}
+      \field{month}{1}
+      \field{title}{The Theory of Open Quantum Systems}
+      \field{year}{2007}
+      \verb{doi}
+      \verb 10.1093/acprof:oso/9780199213900.001.0001
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1093/acprof:oso/9780199213900.001.0001
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1093/acprof:oso/9780199213900.001.0001
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

@@ -1,0 +1,16 @@
+\babel@toc {english}{}\relax 
+\beamer@sectionintoc {1}{The context}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Problem statement}{3}{0}{1}
+\beamer@subsectionintoc {1}{2}{The OQS theory}{4}{0}{1}
+\beamer@sectionintoc {2}{Continuous measurement of the environment}{6}{0}{2}
+\beamer@subsectionintoc {2}{1}{Weak measurements}{6}{0}{2}
+\beamer@subsectionintoc {2}{2}{Quantum trajectories}{7}{0}{2}
+\beamer@subsectionintoc {2}{3}{Photo-detection}{8}{0}{2}
+\beamer@subsectionintoc {2}{4}{Homodyne detection}{9}{0}{2}
+\beamer@subsectionintoc {2}{5}{Kraus operators}{10}{0}{2}
+\beamer@sectionintoc {3}{Simulations}{11}{0}{3}
+\beamer@subsectionintoc {3}{1}{The qubit}{11}{0}{3}
+\beamer@subsectionintoc {3}{2}{The harmonic oscillator}{17}{0}{3}
+\beamer@sectionintoc {4}{Conclusion}{21}{0}{4}
+\beamer@sectionintoc {5}{Appendices}{22}{0}{5}
+\beamer@sectionintoc {6}{Bibliography}{28}{0}{6}
