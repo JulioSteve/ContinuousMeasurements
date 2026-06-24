@@ -1,14 +1,14 @@
 # Fdb version 4
-["biber beamer"] 1782234211.53134 "beamer.bcf" "beamer.bbl" "beamer" 1782239008.34115 0
-  "beamer.bcf" 1782239008.23346 107149 1f2ba4d315dc6ee0ef975dc137456b1e "pdflatex"
+["biber beamer"] 1782295668.41312 "beamer.bcf" "beamer.bbl" "beamer" 1782296971.92975 0
+  "beamer.bcf" 1782296971.82858 107149 e35615136a82eb2397fb3f5879b9a41b "pdflatex"
   "references.bib" 1782232492.19968 30189 f624ee43587ed8166e0bbd298c7b5219 ""
   (generated)
   "beamer.bbl"
   "beamer.blg"
   (rewritten before read)
-["pdflatex"] 1782239006.3171 "/home/julio/Desktop/Beamer/beamer.tex" "beamer.pdf" "beamer" 1782239008.34138 0
+["pdflatex"] 1782296970.12551 "/home/julio/Desktop/GitHub/ContinuousMeasurements/Beamer/beamer.tex" "beamer.pdf" "beamer" 1782296971.92997 0
   "/etc/texmf/web2c/texmf.cnf" 1782210090.97157 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/julio/Desktop/Beamer/beamer.tex" 1782239006.16013 11115 5e4a2b96885973231e329ccbb534742a ""
+  "/home/julio/Desktop/GitHub/ContinuousMeasurements/Beamer/beamer.tex" 1782296969.97583 11113 7d728deb18203dea6ca5a53c31b43ff8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecss1000.tfm" 1136768653 3584 ab55608ad377891510479d34d90acc46 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecss1440.tfm" 1136768653 3584 861af00b50f6fb3ae4544a29a04a7577 ""
@@ -365,19 +365,19 @@
   "Images/QT.pdf" 1782221794.16628 39068 2d7670dcb76298fff3c24947d98a0bce ""
   "Images/Scheme.pdf" 1780994154.19326 41486 4f21ad18034d70215a9c131e51d07335 ""
   "Images/logocomp.png" 1776324400.25881 324847 bbc698bae82a253b564d1993b269899d ""
-  "MCH/Pop_10000.pdf" 1781540840.46619 55655 54119a72c4e78a4008878dc1fb3348fd ""
+  "MCH/Pop_5000.pdf" 1781863717.24639 54928 6dc353252161abcb376aa75a44b8b796 ""
   "MCH/histo.pdf" 1781863717.30739 32720 6ca6791096107ff5adbf004f4c138c9b ""
   "MCQ/NormeE.pdf" 1782149041.46769 39835 5f2b51d3037503406924168d8d25eee2 ""
   "MCQ/NormeSuperposition.pdf" 1782149019.52173 37142 f00dd2a8b7439752c17a76f1aacd6f16 ""
   "MCQ/Pop_10000.pdf" 1781884856.42234 73431 1ab248320f84d9c2a07f831d1fa2dca0 ""
   "MCQ/histo.pdf" 1781884856.8597 32708 38c1abce22c6b64596b79010623034f4 ""
-  "beamer.aux" 1782239008.23136 9199 1ce513d38240aa97374f03c76a44249b "pdflatex"
-  "beamer.bbl" 1782234211.98078 6837 8cafd90060456c5332e15f358c4b8c34 "biber beamer"
-  "beamer.nav" 1782239008.23462 5255 93be26b6895ad53cdd091d0d59e4df81 "pdflatex"
-  "beamer.out" 1782239008.23201 2134 eddc03e04d02b2c4e6e2a4fe3e78cd6a "pdflatex"
-  "beamer.run.xml" 1782239008.23462 2319 f7388e03430d1747b808f21fe75872d1 "pdflatex"
-  "beamer.tex" 1782239006.16013 11115 5e4a2b96885973231e329ccbb534742a ""
-  "beamer.toc" 1782239008.23462 874 860684fefa8fdffc019a5bc538785388 "pdflatex"
+  "beamer.aux" 1782296971.82666 9199 59f7c6e31e748329bc15795553db4280 "pdflatex"
+  "beamer.bbl" 1782295668.88468 6837 cd078559a4998069bc3c93faef9e5dd8 "biber beamer"
+  "beamer.nav" 1782296971.82966 5255 93be26b6895ad53cdd091d0d59e4df81 "pdflatex"
+  "beamer.out" 1782296971.8273 2134 eddc03e04d02b2c4e6e2a4fe3e78cd6a "pdflatex"
+  "beamer.run.xml" 1782296971.82966 2319 f7388e03430d1747b808f21fe75872d1 "pdflatex"
+  "beamer.tex" 1782296969.97583 11113 7d728deb18203dea6ca5a53c31b43ff8 ""
+  "beamer.toc" 1782296971.82966 874 860684fefa8fdffc019a5bc538785388 "pdflatex"
   (generated)
   "beamer.aux"
   "beamer.bcf"

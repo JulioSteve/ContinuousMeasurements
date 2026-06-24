@@ -77,6 +77,17 @@
 \subsection{The OQS theory}
 \begin{frame}
 	\frametitle{The unconditional evolution}
+	\includegraphics[width=\textwidth]{Images/OQS.pdf}
+	\vfill
+	\begin{block}{The Lindblad master equation~\cite{Breuer}}
+		\begin{equation*}
+			\frac{\mathrm{d}\rho}{\mathrm{d}t}(t) = -\frac{i}{\hbar}\qty[H_S, \rho(t)]+k\mathfrak{D}[c]\rho(t).
+		\end{equation*}
+	\end{block}
+	We define the dissipator as $\mathfrak{D}[c]\rho=c\rho c^\dagger -\frac{1}{2}\qty(c^\dagger c \rho+\rho c^\dagger c)$.
+\end{frame}
+\begin{frame}
+	\frametitle{The unconditional evolution}
 	Under the approximations~\cite{Albarelli, WM}:
 	\begin{itemize}[label=$\bullet$]
 		\item constant coupling $k\in\mathbb{R}$ (named the first Markovian assumption),
@@ -86,18 +97,6 @@
 	\end{itemize}
 	\vfill
 	Within the \textbf{input-output formalism}~\cite{GardinerCollett} the environment is a harmonic oscillator at each time step, with corresponding annihilation operator $B_t$. 
-\end{frame}
-
-\begin{frame}
-	\frametitle{The unconditional evolution}
-	\includegraphics[width=\textwidth]{Images/OQS.pdf}
-	\vfill
-	\begin{block}{The Lindblad master equation~\cite{Breuer}}
-		\begin{equation*}
-			\frac{\mathrm{d}\rho}{\mathrm{d}t}(t) = -\frac{i}{\hbar}\qty[H_S, \rho(t)]+k\mathfrak{D}[c]\rho(t).
-		\end{equation*}
-	\end{block}
-	We define the dissipator as $\mathfrak{D}[c]\rho=c\rho c^\dagger -\frac{1}{2}\qty(c^\dagger c \rho+\rho c^\dagger c)$.
 \end{frame}
 
 \section{Continuous measurement of the environment}
@@ -199,7 +198,7 @@
 \subsection{The harmonic oscillator}
 \begin{frame}{The harmonic oscillator under photo-detection of its environment}
 	\centering
-		\includegraphics[width=\linewidth]{MCH/Pop_10000.pdf}
+		\includegraphics[width=\linewidth]{MCH/Pop_5000.pdf}
 \end{frame}
 \begin{frame}{The harmonic oscillator under photo-detection of its environment}
 	\centering

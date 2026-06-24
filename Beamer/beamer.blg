@@ -1,0 +1,21 @@
+[0] Config.pm:307> INFO - This is Biber 2.19
+[0] Config.pm:310> INFO - Logfile is 'beamer.blg'
+[39] biber:340> INFO - === Wed Jun 24, 2026, 12:07:48
+[48] Biber.pm:419> INFO - Reading 'beamer.bcf'
+[77] Biber.pm:979> INFO - Found 4 citekeys in bib section 0
+[83] Biber.pm:4419> INFO - Processing section 0
+[89] Biber.pm:4610> INFO - Looking for bibtex file 'references.bib' for section 0
+[91] bibtex.pm:1713> INFO - LaTeX decoding ...
+[121] bibtex.pm:1519> INFO - Found BibTeX data source 'references.bib'
+[153] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[153] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[153] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[153] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[157] bbl.pm:660> INFO - Writing 'beamer.bbl' with encoding 'UTF-8'
+[158] bbl.pm:763> INFO - Output to beamer.bbl
+[158] Biber.pm:131> WARN - legacy month field 'Jun' in entry 'GardinerCollett' is not an integer - this will probably not sort properly.
+[158] Biber.pm:131> WARN - BibTeX subsystem: /tmp/biber_tmp_q1fh/33e59b5ca9ec342068223d604c3f8d55_11066.utf8, line 202, warning: undefined macro "Sept"
+[158] Biber.pm:131> WARN - BibTeX subsystem: /tmp/biber_tmp_q1fh/33e59b5ca9ec342068223d604c3f8d55_11066.utf8, line 303, warning: undefined macro "June"
+[158] Biber.pm:131> WARN - BibTeX subsystem: /tmp/biber_tmp_q1fh/33e59b5ca9ec342068223d604c3f8d55_11066.utf8, line 717, warning: undefined macro "July"
+[158] Biber.pm:131> WARN - BibTeX subsystem: /tmp/biber_tmp_q1fh/33e59b5ca9ec342068223d604c3f8d55_11066.utf8, line 731, warning: undefined macro "July"
+[158] Biber.pm:133> INFO - WARNINGS: 5

@@ -19,6 +19,46 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global}
+    \entry{Breuer}{book}{}
+      \name{author}{2}{}{%
+        {{hash=44be9d24e3ede84bee3691a7a300e5db}{%
+           family={Breuer},
+           familyi={B\bibinitperiod},
+           given={Heinz-Peter},
+           giveni={H\bibinithyphendelim P\bibinitperiod}}}%
+        {{hash=4b215190f542b12fd214896e21eff64b}{%
+           family={Petruccione},
+           familyi={P\bibinitperiod},
+           given={Francesco},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University PressOxford}%
+      }
+      \strng{namehash}{fc984943b8bdb1c48eb687b8f74fd49b}
+      \strng{fullhash}{fc984943b8bdb1c48eb687b8f74fd49b}
+      \strng{bibnamehash}{fc984943b8bdb1c48eb687b8f74fd49b}
+      \strng{authorbibnamehash}{fc984943b8bdb1c48eb687b8f74fd49b}
+      \strng{authornamehash}{fc984943b8bdb1c48eb687b8f74fd49b}
+      \strng{authorfullhash}{fc984943b8bdb1c48eb687b8f74fd49b}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9780191706349}
+      \field{month}{1}
+      \field{title}{The Theory of Open Quantum Systems}
+      \field{year}{2007}
+      \verb{doi}
+      \verb 10.1093/acprof:oso/9780199213900.001.0001
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1093/acprof:oso/9780199213900.001.0001
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1093/acprof:oso/9780199213900.001.0001
+      \endverb
+    \endentry
     \entry{Albarelli}{article}{}
       \name{author}{2}{}{%
         {{hash=63e1d848eeb7d57e12f168babd42c4db}{%
@@ -41,8 +81,8 @@
       \strng{authorbibnamehash}{da2c70b39f28166423e4b0e2a916551b}
       \strng{authornamehash}{da2c70b39f28166423e4b0e2a916551b}
       \strng{authorfullhash}{da2c70b39f28166423e4b0e2a916551b}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issn}{0375-9601}
@@ -91,8 +131,8 @@
       \strng{authorbibnamehash}{4bafae639084d9be7a08b1aa96a20a2e}
       \strng{authornamehash}{4bafae639084d9be7a08b1aa96a20a2e}
       \strng{authorfullhash}{4bafae639084d9be7a08b1aa96a20a2e}
-      \field{sortinit}{1}
-      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{month}{11}
@@ -121,8 +161,8 @@
       \strng{authorbibnamehash}{b4ae8a90d59cde0073f8b603aa67e6d9}
       \strng{authornamehash}{b4ae8a90d59cde0073f8b603aa67e6d9}
       \strng{authorfullhash}{b4ae8a90d59cde0073f8b603aa67e6d9}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{issue}{6}
@@ -141,46 +181,6 @@
       \endverb
       \verb{url}
       \verb https://link.aps.org/doi/10.1103/PhysRevA.31.3761
-      \endverb
-    \endentry
-    \entry{Breuer}{book}{}
-      \name{author}{2}{}{%
-        {{hash=44be9d24e3ede84bee3691a7a300e5db}{%
-           family={Breuer},
-           familyi={B\bibinitperiod},
-           given={Heinz-Peter},
-           giveni={H\bibinithyphendelim P\bibinitperiod}}}%
-        {{hash=4b215190f542b12fd214896e21eff64b}{%
-           family={Petruccione},
-           familyi={P\bibinitperiod},
-           given={Francesco},
-           giveni={F\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Oxford University PressOxford}%
-      }
-      \strng{namehash}{fc984943b8bdb1c48eb687b8f74fd49b}
-      \strng{fullhash}{fc984943b8bdb1c48eb687b8f74fd49b}
-      \strng{bibnamehash}{fc984943b8bdb1c48eb687b8f74fd49b}
-      \strng{authorbibnamehash}{fc984943b8bdb1c48eb687b8f74fd49b}
-      \strng{authornamehash}{fc984943b8bdb1c48eb687b8f74fd49b}
-      \strng{authorfullhash}{fc984943b8bdb1c48eb687b8f74fd49b}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{isbn}{9780191706349}
-      \field{month}{1}
-      \field{title}{The Theory of Open Quantum Systems}
-      \field{year}{2007}
-      \verb{doi}
-      \verb 10.1093/acprof:oso/9780199213900.001.0001
-      \endverb
-      \verb{urlraw}
-      \verb http://dx.doi.org/10.1093/acprof:oso/9780199213900.001.0001
-      \endverb
-      \verb{url}
-      \verb http://dx.doi.org/10.1093/acprof:oso/9780199213900.001.0001
       \endverb
     \endentry
   \enddatalist
