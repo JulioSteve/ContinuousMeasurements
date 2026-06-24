@@ -17,8 +17,10 @@
 \usepackage{physics}
 \usepackage{bm}
 \usepackage[controls]{animate}
-\usepackage[backend=biber,style=numeric,sorting=none]{biblatex}
+\usepackage[backend=biber,style=alphabetic,sorting=none]{biblatex}
 \usepackage{csquotes}
+\usepackage{ragged2e}
+\usepackage{appendix}
 \addbibresource{references.bib}
 
 \usepackage{xcolor}
@@ -44,20 +46,39 @@
 \newcommand{\interiorcolor}{magenta!70!black}
 \newcommand{\initialcolor}{orange!80!black}
 \renewcommand*{\bibfont}{\scriptsize}
+\newcommand{\backupbegin}{
+	\newcounter{finalframe}
+	\setcounter{finalframe}{\value{framenumber}}
+}
+\newcommand{\backupend}{
+	\setcounter{framenumber}{\value{finalframe}}
+}
 
 \usetheme{PaloAlto}
 \usefonttheme[onlymath]{serif}
 
 \title[Evolution of OQS under continuous measurement of their environment]{Evolution of open quantum systems under continuous measurement of their environment}
 \author[]{J.~Stevenot \and supervised by B.~Bellomo\inst{1}}
-\date{June 2023}
+\date{June 2026}
 \institute{\inst{1}Equipe $\Phi$Th, Institut UTINAM - CNRS 6213, OSU THETA}
 \logo{\includegraphics[height=9mm]{Images/logocomp.png}}
 
 \pgfplotsset{compat=1.18}
 \begin{document}
 
-\frame{\titlepage}
+\begin{frame}
+    \titlepage
+    
+    % Positionnement absolu des logos en bas de la page
+    \begin{tikzpicture}[remember picture, overlay]
+        \node[anchor=south west, xshift=1.7cm, yshift=0pt] at (current page.south west) {
+            \includegraphics[height=1.7cm]{Images/logoUTI.jpeg}
+        };
+        \node[anchor=south east, xshift=-0.1cm, yshift=0.4cm] at (current page.south east) {
+            \includegraphics[height=1cm]{Images/logo.png}
+        };
+    \end{tikzpicture}
+\end{frame}
 \begin{frame}
 	\frametitle{Table of contents}
 	\tableofcontents
@@ -70,11 +91,33 @@
 	\includegraphics[width=\textwidth]{Images/Collapse.pdf}
 	\vfill
 	\begin{alertblock}{The main effect of measurements}
-		Measuring a quantum system impacts its state. In particular, it collapses onto one of its eigenstates.
+		Measuring a quantum system impacts its state.\\ In particular, it collapses onto one of the possible eigenstates.
 	\end{alertblock}
 \end{frame}
 
 \subsection{The OQS theory}
+\begin{frame}{The input-output formalism}
+	\centering
+	\only<1>{\includegraphics[width=\textwidth]{Images/Collisional.pdf}}
+	\only<2>{\includegraphics[width=0.5\textwidth]{Images/InputOutput.pdf}
+	\begin{block}{The temporal input mode $b_t$~\cite{Carmichael}}
+		\begin{gather*}
+			b_t=\frac{1}{\sqrt{2\pi}}\int_\mathcal{W} b_\omega e^{-i(\omega-\omega_0)(t-t_0)}\mathrm{d}\omega,\\[0.4cm]
+			\qty[b_t, b_{t'}^\dagger]=\delta(t-t')\quad\Longrightarrow\quad\qty[B_t,B_{t}^\dagger]=\mathbb{I}.
+		\end{gather*}
+	\end{block}
+	}
+\end{frame}
+\begin{frame}
+	\frametitle{The unconditional evolution}
+	Under the approximations~\cite{Albarelli, WM}:
+	\begin{itemize}[label=$\bullet$]
+		\item<1-> constant coupling $\forall\omega\in\mathcal{W},\quad k(\omega)=k\in\mathbb{R}$ (named the first Markovian assumption),
+		\item<2-> weak coupling condition $k\ll\omega_0$,
+		\item<3-> operators acquire a time-dependant phase in the interaction picture $\tilde{c}(t)=c e^{-i\omega_0 (t-t_0)}$,
+		\item<4-> the Born-Markov approximation $\forall t\in\mathbb{R},\quad \tilde{\bm{\varrho}}(t)=\tilde{\rho}(t)\otimes\ketbra{0}_t$.
+	\end{itemize}
+\end{frame}
 \begin{frame}
 	\frametitle{The unconditional evolution}
 	\includegraphics[width=\textwidth]{Images/OQS.pdf}
@@ -86,33 +129,30 @@
 	\end{block}
 	We define the dissipator as $\mathfrak{D}[c]\rho=c\rho c^\dagger -\frac{1}{2}\qty(c^\dagger c \rho+\rho c^\dagger c)$.
 \end{frame}
-\begin{frame}
-	\frametitle{The unconditional evolution}
-	Under the approximations~\cite{Albarelli, WM}:
-	\begin{itemize}[label=$\bullet$]
-		\item constant coupling $k\in\mathbb{R}$ (named the first Markovian assumption),
-		\item operators acquire a time-dependant phase in the interaction picture $\tilde{c}(t)=c e^{-i\omega_0 (t-t_0)}$,
-		\item weak coupling condition $k\ll\omega_0$,
-		\item the Born-Markov approximation $\forall t\in\mathbb{R},\quad \tilde{\bm{\varrho}}(t)=\tilde{\rho}(t)\otimes\ketbra{0}_t$.
-	\end{itemize}
-	\vfill
-	Within the \textbf{input-output formalism}~\cite{GardinerCollett} the environment is a harmonic oscillator at each time step, with corresponding annihilation operator $B_t$. 
-\end{frame}
 
 \section{Continuous measurement of the environment}
 \subsection{Weak measurements}
 \begin{frame}
 	\frametitle{Avoiding the brutal collapse of the system's state}
 	\includegraphics[width=\textwidth]{Images/Scheme.pdf}
-	\vfill\centering
-	The state of the system is conditional!
+	\vfill\centering\pause
+	\begin{block}{The evolution of the total state $\bm{\varrho}$}
+		\begin{equation*}
+			\bm{\varrho}_c(t+\mathrm{d}t) = U_I(t+\mathrm{d}t,t)\overbrace{\qty[\rho_c(t)\otimes\ketbra{0}_t]}^{\bm{\varrho}_c(t)} U_I^\dagger (t+\mathrm{d}t,t)
+		\end{equation*}
+	\end{block}
 \end{frame}
 
 \subsection{Quantum trajectories}
 \begin{frame}
-	\frametitle{Quantum trajectories}
-	\includegraphics[width=\textwidth]{Images/QT.pdf}
-	The outcome of the measurement is labelled by $m$. There is $n$ possible outcomes. We can follow one trajectory among all the possible trajectories. 
+	\frametitle{Quantum trajectories}\centering
+	\includegraphics[width=0.7\textwidth]{Images/QT.pdf}
+	\begin{example}
+	The outcome of the measurement is labelled by $m$ and there are $n$ possible outcomes. 
+	\end{example}
+	\begin{alertblock}{A single trajectory}
+		We follow one trajectory among all the possible trajectories!
+	\end{alertblock}
 \end{frame}
 
 \subsection{Photo-detection}
@@ -121,7 +161,7 @@
 	By projecting the environment onto the basis $\qty{\ket{m}}_{m\in\mathbb{N}}$ at each time step, the possible measurement outcomes are $\mathrm{d}N_t=0$ or $\mathrm{d}N_t=1$.
 	\begin{block}{$\mathrm{d}N_t$ is a Poisson increment (follows a Poisson distribution)}
 		\begin{equation*}
-			\mathrm{d}N_t^2=\mathrm{d}N_t,\quad \mathbb{V}\qty[\mathrm{d}N_t]\approx\mathbb{E}\qty[\mathrm{d}N_t]=\expval{c^\dagger c}_t k \mathrm{d}t.
+			\mathrm{d}N_t^2=\mathrm{d}N_t,\quad \mathbb{V}\qty[\mathrm{d}N_t]\approx\mathbb{E}\qty[\mathrm{d}N_t]=\textcolor{red}{\expval{c^\dagger c}_t} k \mathrm{d}t.
 		\end{equation*}
 	\end{block}
 	We define for all operator $c$ and for all density matrix $\rho$, $\mathfrak{H}[c]\rho = c\rho+\rho c^\dagger - \expval{c+c^\dagger}_t \rho$.
@@ -135,10 +175,10 @@
 \subsection{Homodyne detection}
 \begin{frame}
 	\frametitle{Unravelling the homodyne detection SME}
-	By projecting the environment onto the continuous basis $\qty{\ket{x_\theta}_t}_{x_\theta\in\mathbb{R}}$ at each timestep, the possible measurement outcomes span the entire real axis. The output signal of measurement is $\mathrm{d}y_t = \sqrt{k}\expval{ce^{-i\theta}+c^\dagger e^{i\theta}}_t\mathrm{d}t+\mathrm{d}w_t$.
-	\begin{block}{The quadrature operator $\hat{x}_\theta$}
+	By projecting the environment onto the continuous basis $\qty{\ket{x_\theta}_t}_{x_\theta\in\mathbb{R}}$ at each timestep, the possible measurement outcomes span the entire real axis.
+	\begin{block}{The quadrature operator $\hat{x}_\theta$ and the measurement signal $\mathrm{d}y_t$}
 		\begin{equation*}
-			\hat{x}_\theta = \frac{B_t e^{-i\theta}+B_t^\dagger e^{i\theta}}{\sqrt{2}}.
+			\hat{x}_\theta = \frac{B_t e^{-i\theta}+B_t^\dagger e^{i\theta}}{\sqrt{2}}\quad\Longrightarrow\quad\mathrm{d}y_t = \sqrt{k}\textcolor{red}{\expval{ce^{-i\theta}+c^\dagger e^{i\theta}}_t}\mathrm{d}t+\mathrm{d}w_t.
 		\end{equation*}
 	\end{block}
 	\begin{block}{$\mathrm{d}w_t$ is a Wiener increment (follows a Gaussian distribution)}
@@ -175,13 +215,13 @@
 \subsection{The qubit}
 \begin{frame}{The qubit under photo-detection of its environment}
 	\centering
-	$\ket{\psi(0)}=\ket{e}$
-	\includegraphics[width=\linewidth]{MCQ/NormeE.pdf}
+	$\ket{\psi(0)}=\frac{\ket{e}+\ket{g}}{\sqrt{2}}$
+	\includegraphics[width=\linewidth]{MCQ/NormeSuperposition.pdf}
 \end{frame}
-\begin{frame}{The qubit under photo-detection of its environment}
-	\centering
-		\includegraphics[width=\linewidth]{MCQ/histo.pdf}
-\end{frame}
+% \begin{frame}{The qubit under photo-detection of its environment}
+% 	\centering
+% 		\includegraphics[width=\linewidth]{MCQ/histo.pdf}
+% \end{frame}
 \begin{frame}{The qubit under photo-detection of its environment}
 	\centering
 		\includegraphics[width=\linewidth]{MCQ/Pop_10000.pdf}
@@ -196,15 +236,42 @@
 	\includegraphics[width=\linewidth]{HQ/Pquadrature.pdf}
 \end{frame}
 
+
+
+\section{Conclusion}
+\begin{frame}{Conclusion}
+	\begin{itemize}[label=$\blacktriangleright$]
+		\item Stochastic master equations and conditional trajectories.
+		\item Unravellings of the unconditional master equation.
+		\item Obtaining pieces of information about the system in average via weak measurements.
+	\end{itemize}\pause\vfill
+	\begin{itemize}[label=$\bullet$]
+		\item We used very ideal approximations.
+		\item What about inefficient detectors?
+		\item Is there any other measuring process?
+		\item What about thermal noises?
+	\end{itemize}\pause
+	\vfill\centering\Large
+	Thank you for your time and attention.
+\end{frame}
+
+\appendix\backupbegin\setbeamercolor{page number in head/foot}{fg=white}
+\section*{Appendices}
+\begin{frame}
+	\vfill
+	\centering\Huge
+	Appendices
+	\vfill
+\end{frame}
 \subsection{The harmonic oscillator}
 \begin{frame}{The harmonic oscillator under photo-detection of its environment}
 	\centering
 		\includegraphics[width=\linewidth]{MCH/Pop_5000.pdf}
 \end{frame}
-% \begin{frame}{The harmonic oscillator under photo-detection of its environment}
-% 	\centering
-% 		\includegraphics[width=\linewidth]{MCH/histo.pdf}
-% \end{frame}
+\begin{frame}{The harmonic oscillator under photo-detection of its environment}
+	\centering
+		\includegraphics[width=\linewidth]{MCH/histo.pdf}
+\end{frame}
 \begin{frame}{The harmonic oscillator under homodyne detection of its environment}
 	\centering
 	\includegraphics[width=\linewidth]{HH/Xquadrature.pdf}
@@ -213,30 +280,21 @@
 	\centering
 	\includegraphics[width=\linewidth]{HH/Pquadrature.pdf}
 \end{frame}
-
-\section{Conclusion}
-\begin{frame}{Conclusion}
-	\begin{itemize}[label=$\blacktriangleright$]
-		\item Stochastic master equations and conditional trajectories.
-		\item Unravellings of the unconditional master equation.
-		\item Obtaining pieces of information about the system in average via weak measurements.
-	\end{itemize}\vfill
-	\begin{itemize}[label=$\bullet$]
-		\item We used very ideal approximations.
-		\item What about inefficient detectors?
-		\item Is there any other measuring process?
-		\item What about thermal noises?
-	\end{itemize}
-	\vfill\centering\Large
-	Thank you for your time and attention.
+\begin{frame}{The harmonic oscillator under homodyne detection of its environment}
+	\centering
+	\includegraphics[width=\linewidth]{HH/XquadSingleError.pdf}
 \end{frame}
-
-\section{Appendices}
-\begin{frame}
-	\vfill
-	\centering\Huge
-	Appendices
-	\vfill
+\begin{frame}{The harmonic oscillator under homodyne detection of its environment}
+	\centering
+	\includegraphics[width=\linewidth]{HH/PquadSingleError.pdf}
+\end{frame}
+\begin{frame}{The qubit under homodyne detection of its environment}
+	\centering
+	\includegraphics[width=\linewidth]{HQ/XquadSingleError.pdf}
+\end{frame}
+\begin{frame}{The qubit under homodyne detection of its environment}
+	\centering
+	\includegraphics[width=\linewidth]{HQ/PquadSingleError.pdf}
 \end{frame}
 \begin{frame}
 	\frametitle{Linearization of the SMEs}
@@ -253,34 +311,18 @@
 	\end{block}
 Every statistical quantity follows \textit{ostensible} probability law instead of the \textit{true} probability law in the linear (non-normalized) case.
 \end{frame}
-\begin{frame}{The qubit under homodyne detection of its environment}
-	\centering
-	\includegraphics[width=\linewidth]{HQ/XquadSingleError.pdf}
-\end{frame}
-\begin{frame}{The qubit under homodyne detection of its environment}
-	\centering
-	\includegraphics[width=\linewidth]{HQ/PquadSingleError.pdf}
-\end{frame}
-\begin{frame}{The harmonic oscillator under homodyne detection of its environment}
-	\centering
-	\includegraphics[width=\linewidth]{HH/XquadSingleError.pdf}
-\end{frame}
-\begin{frame}{The harmonic oscillator under homodyne detection of its environment}
-	\centering
-	\includegraphics[width=\linewidth]{HH/PquadSingleError.pdf}
-\end{frame}
 \begin{frame}{The qubit under photo-detection of its environment}
 	\centering
-	$\ket{\psi(0)}=\frac{\ket{e}+\ket{g}}{\sqrt{2}}$
-	\includegraphics[width=\linewidth]{MCQ/NormeSuperposition.pdf}
+	$\ket{\psi(0)}=\ket{e}$
+	\includegraphics[width=\linewidth]{MCQ/NormeE.pdf}
 \end{frame}
 \begin{frame}{The homodyne measurement setup}
 	\includegraphics[width=0.8\textwidth]{Images/Homodyne.pdf}
 \end{frame}
-\section{Bibliography}
-\begin{frame}[allowframebreaks]{Bibliography}
+\section*{Bibliography}
+\begin{frame}{Bibliography}
 	\printbibliography
 \end{frame}
-
+\backupend
 \end{document}
 
