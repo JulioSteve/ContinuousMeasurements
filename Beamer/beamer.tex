@@ -136,6 +136,11 @@
 \begin{frame}
 	\frametitle{Unravelling the homodyne detection SME}
 	By projecting the environment onto the continuous basis $\qty{\ket{x_\theta}_t}_{x_\theta\in\mathbb{R}}$ at each timestep, the possible measurement outcomes span the entire real axis. The output signal of measurement is $\mathrm{d}y_t = \sqrt{k}\expval{ce^{-i\theta}+c^\dagger e^{i\theta}}_t\mathrm{d}t+\mathrm{d}w_t$.
+	\begin{block}{The quadrature operator $\hat{x}_\theta$}
+		\begin{equation*}
+			\hat{x}_\theta = \frac{B_t e^{-i\theta}+B_t^\dagger e^{i\theta}}{\sqrt{2}}.
+		\end{equation*}
+	\end{block}
 	\begin{block}{$\mathrm{d}w_t$ is a Wiener increment (follows a Gaussian distribution)}
 		\begin{equation*}
 			\mathrm{d}w_t^2=\mathrm{d}t,\quad \mathbb{V}\qty[\mathrm{d}w_t]=\mathrm{d}t,\quad \mathbb{E}\qty[\mathrm{d}w_t]=0.
@@ -173,11 +178,7 @@
 	$\ket{\psi(0)}=\ket{e}$
 	\includegraphics[width=\linewidth]{MCQ/NormeE.pdf}
 \end{frame}
-\begin{frame}{The qubit under photo-detection of its environment}
-	\centering
-	$\ket{\psi(0)}=\frac{\ket{e}+\ket{g}}{\sqrt{2}}$
-	\includegraphics[width=\linewidth]{MCQ/NormeSuperposition.pdf}
-\end{frame}
+
 \begin{frame}{The qubit under photo-detection of its environment}
 	\centering
 		\includegraphics[width=\linewidth]{MCQ/Pop_10000.pdf}
@@ -200,10 +201,10 @@
 	\centering
 		\includegraphics[width=\linewidth]{MCH/Pop_5000.pdf}
 \end{frame}
-\begin{frame}{The harmonic oscillator under photo-detection of its environment}
-	\centering
-		\includegraphics[width=\linewidth]{MCH/histo.pdf}
-\end{frame}
+% \begin{frame}{The harmonic oscillator under photo-detection of its environment}
+% 	\centering
+% 		\includegraphics[width=\linewidth]{MCH/histo.pdf}
+% \end{frame}
 \begin{frame}{The harmonic oscillator under homodyne detection of its environment}
 	\centering
 	\includegraphics[width=\linewidth]{HH/Xquadrature.pdf}
@@ -268,7 +269,14 @@ Every statistical quantity follows \textit{ostensible} probability law instead o
 	\centering
 	\includegraphics[width=\linewidth]{HH/PquadSingleError.pdf}
 \end{frame}
-
+\begin{frame}{The qubit under photo-detection of its environment}
+	\centering
+	$\ket{\psi(0)}=\frac{\ket{e}+\ket{g}}{\sqrt{2}}$
+	\includegraphics[width=\linewidth]{MCQ/NormeSuperposition.pdf}
+\end{frame}
+\begin{frame}{The homodyne measurement setup}
+	\includegraphics[width=0.8\textwidth]{Images/Homodyne.pdf}
+\end{frame}
 \section{Bibliography}
 \begin{frame}[allowframebreaks]{Bibliography}
 	\printbibliography
